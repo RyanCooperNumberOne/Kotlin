@@ -11,11 +11,11 @@ fun main() {
     var primeNumber = 2
     while (sequenceNumber != 10001) {
         primeNumber++
-        var t = 2
+        var divider = 2
         val rootOfPrimeNumber = sqrt(primeNumber.toFloat())
-        while (primeNumber % t != 0 && t <= rootOfPrimeNumber) {
-            t++
-            if (t > rootOfPrimeNumber) {
+        while (primeNumber % divider != 0 && divider <= rootOfPrimeNumber) {
+            divider++
+            if (divider > rootOfPrimeNumber) {
                 sequenceNumber++
             }
         }
